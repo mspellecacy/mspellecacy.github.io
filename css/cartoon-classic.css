@@ -1,0 +1,248 @@
+@keyframes cartoonBounce {
+    0%, 100% { transform: translateY(0) rotate(-0.4deg); }
+    50% { transform: translateY(-5px) rotate(0.4deg); }
+}
+
+@keyframes cartoonPopIn {
+    0% { opacity: 0; transform: scale(0.96) translateY(6px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+body[data-theme="cartoon-classic"] {
+    --bg-sky: #9ed9ff;
+    --sunburst: #ffd447;
+    --ring-red: #de2d2d;
+    --ring-orange: #f57c19;
+    --ring-cream: #fff5d6;
+    --ink: #141414;
+    --ink-soft: #2a2a2a;
+    --panel: #fff9ea;
+    --panel-alt: #fff2c0;
+    --accent: #2c6be8;
+    --accent-2: #f7379a;
+    margin: 0;
+    padding: 0;
+    color: var(--ink);
+    font-family: 'Trebuchet MS', 'Verdana', sans-serif;
+    background:
+        radial-gradient(circle at 50% 20%, var(--sunburst) 0%, #ffd447 12%, var(--ring-red) 12.8%, var(--ring-red) 18%, var(--ring-orange) 18.8%, var(--ring-orange) 26%, var(--ring-cream) 26.7%, var(--ring-cream) 33.6%, var(--ring-red) 34.5%, var(--ring-red) 42.4%, transparent 43%),
+        linear-gradient(180deg, #b5e6ff 0%, var(--bg-sky) 45%, #78c5ff 100%);
+    background-attachment: fixed;
+}
+
+body[data-theme="cartoon-classic"] .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 14px 20px;
+    background: rgba(255, 245, 214, 0.94);
+    border-bottom: 4px solid var(--ink);
+    box-shadow: 0 6px 0 #00000033;
+}
+
+body[data-theme="cartoon-classic"] .nav-links a {
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    border: 3px solid var(--ink);
+    border-radius: 999px;
+    padding: 6px 12px;
+    background: #fff;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+body[data-theme="cartoon-classic"] .nav-links a:hover {
+    background: #ffe58f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 0 var(--ink);
+}
+
+body[data-theme="cartoon-classic"] .theme-switcher {
+    margin-left: auto;
+}
+
+body[data-theme="cartoon-classic"] .theme-switcher select {
+    border: 3px solid var(--ink);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--ink);
+    font: inherit;
+    font-weight: 800;
+    padding: 6px 12px;
+}
+
+body[data-theme="cartoon-classic"] .container {
+    max-width: 980px;
+    margin: 24px auto;
+    padding: 24px;
+    border: 5px solid var(--ink);
+    border-radius: 26px;
+    background: linear-gradient(180deg, rgba(255, 249, 234, 0.96), rgba(255, 242, 192, 0.96));
+    box-shadow: 0 10px 0 var(--ink-soft), 0 18px 30px rgba(0, 0, 0, 0.25);
+}
+
+body[data-theme="cartoon-classic"] header {
+    text-align: center;
+}
+
+body[data-theme="cartoon-classic"] h1,
+body[data-theme="cartoon-classic"] h2,
+body[data-theme="cartoon-classic"] h3,
+body[data-theme="cartoon-classic"] h4,
+body[data-theme="cartoon-classic"] h5,
+body[data-theme="cartoon-classic"] h6 {
+    color: var(--ink);
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+body[data-theme="cartoon-classic"] h1 {
+    font-size: clamp(2rem, 5vw, 3.3rem);
+    letter-spacing: 0.04em;
+    text-shadow: 3px 3px 0 #fff, 6px 6px 0 var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+body[data-theme="cartoon-classic"] h2 {
+    display: inline-block;
+    border: 4px solid var(--ink);
+    border-radius: 12px;
+    padding: 6px 14px;
+    background: #fff;
+    box-shadow: 5px 5px 0 var(--accent-2);
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+body[data-theme="cartoon-classic"] .subtitle {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 8px 14px;
+    border: 3px dashed var(--ink);
+    border-radius: 10px;
+    background: #fff;
+    font-weight: 700;
+    animation: cartoonBounce 2.3s ease-in-out infinite;
+}
+
+body[data-theme="cartoon-classic"] .card {
+    background: var(--panel);
+    border: 4px solid var(--ink);
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 6px 6px 0 var(--ink);
+    animation: cartoonPopIn 0.28s ease-out;
+}
+
+body[data-theme="cartoon-classic"] .job {
+    background: linear-gradient(180deg, var(--panel), var(--panel-alt));
+}
+
+body[data-theme="cartoon-classic"] .date {
+    display: inline-block;
+    background: #fff;
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    padding: 3px 10px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 0.6rem;
+}
+
+body[data-theme="cartoon-classic"] .profile-img-container {
+    width: 206px;
+    height: 206px;
+    margin: 8px auto 16px;
+    border-radius: 50%;
+    border: 6px solid var(--ink);
+    box-shadow: 0 0 0 6px #fff, 0 0 0 12px var(--ring-red), 0 10px 0 var(--ink-soft);
+    overflow: hidden;
+    background: #fff;
+}
+
+body[data-theme="cartoon-classic"] .profile-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(1.15) contrast(1.08);
+}
+
+body[data-theme="cartoon-classic"] .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+body[data-theme="cartoon-classic"] .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 3px solid var(--ink);
+    background: #fff;
+    color: var(--ink);
+    text-decoration: none;
+    box-shadow: 3px 3px 0 var(--ink);
+}
+
+body[data-theme="cartoon-classic"] .social-links a:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0 var(--ink);
+}
+
+body[data-theme="cartoon-classic"] .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+body[data-theme="cartoon-classic"] .skill-tag {
+    border: 3px solid var(--ink);
+    background: #fff;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 800;
+    box-shadow: 3px 3px 0 var(--accent);
+}
+
+body[data-theme="cartoon-classic"] p,
+body[data-theme="cartoon-classic"] li {
+    line-height: 1.6;
+}
+
+body[data-theme="cartoon-classic"] ul {
+    margin-top: 0.4rem;
+}
+
+@media (max-width: 720px) {
+    body[data-theme="cartoon-classic"] .container {
+        margin: 14px;
+        padding: 16px;
+        border-width: 4px;
+        border-radius: 18px;
+    }
+
+    body[data-theme="cartoon-classic"] .nav-links {
+        gap: 8px;
+        padding: 10px 12px;
+    }
+
+    body[data-theme="cartoon-classic"] .theme-switcher {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    body[data-theme="cartoon-classic"] .theme-switcher select {
+        width: 100%;
+    }
+}

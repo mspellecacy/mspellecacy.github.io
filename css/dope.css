@@ -1,0 +1,127 @@
+@keyframes dopeGlitch {
+    0%, 97% { transform: translateX(0); }
+    98% { transform: translateX(-2px); }
+    99% { transform: translateX(2px); }
+    100% { transform: translateX(0); }
+}
+
+body[data-theme="dope"] {
+    --bg-color: #050505;
+    --text-color: #e0e0e0;
+    --primary-color: #0ff;
+    --secondary-color: #f0f;
+    --accent-color: #0f0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body[data-theme="dope"] .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+body[data-theme="dope"] .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #080808;
+    border-bottom: 1px solid var(--primary-color);
+    padding: 15px 20px;
+}
+
+body[data-theme="dope"] .theme-switcher {
+    margin-left: auto;
+}
+
+body[data-theme="dope"] .theme-switcher select {
+    background: #050505;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    font-family: inherit;
+    padding: 5px;
+}
+
+body[data-theme="dope"] h1,
+body[data-theme="dope"] h2,
+body[data-theme="dope"] h3 {
+    text-transform: uppercase;
+}
+
+body[data-theme="dope"] h1 {
+    color: #fff;
+    letter-spacing: 4px;
+    animation: dopeGlitch 3s infinite;
+    text-shadow: 0 0 10px var(--primary-color), 0 0 22px var(--primary-color);
+}
+
+body[data-theme="dope"] h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+body[data-theme="dope"] a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+body[data-theme="dope"] .card {
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid var(--primary-color);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+body[data-theme="dope"] .subtitle,
+body[data-theme="dope"] .date {
+    color: var(--accent-color);
+}
+
+body[data-theme="dope"] .profile-img-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color), inset 0 0 20px var(--primary-color);
+    overflow: hidden;
+}
+
+body[data-theme="dope"] .profile-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(1.2) saturate(1.4) hue-rotate(15deg);
+}
+
+body[data-theme="dope"] .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+body[data-theme="dope"] .social-links a {
+    text-shadow: 0 0 5px var(--primary-color);
+}
+
+body[data-theme="dope"] .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+body[data-theme="dope"] .skill-tag {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.45rem 0.85rem;
+    text-transform: uppercase;
+}
