@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="LinkedIn-oriented resume profile for Michael Spellecacy, AI-focused full-stack software engineer."/>
+    <meta name="robots" content="index,follow"/>
+    <title>Michael Spellecacy | AI-Focused Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f4f7fb;
+            --panel: #ffffff;
+            --ink: #10233d;
+            --muted: #516177;
+            --line: #d8e0eb;
+            --accent: #0a66c2;
+            --accent-soft: #e6f0fb;
+            --good: #0e8f5b;
+            --radius: 14px;
+            --shadow: 0 10px 30px rgba(13, 28, 51, 0.09);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            color: var(--ink);
+            font-family: "IBM Plex Sans", "Avenir Next", "Segoe UI", sans-serif;
+            background:
+                radial-gradient(1300px 450px at 12% -8%, #dbeafe 0%, transparent 70%),
+                radial-gradient(800px 320px at 90% -10%, #e2e8f0 0%, transparent 72%),
+                var(--bg);
+            line-height: 1.55;
+        }
+
+        .page {
+            max-width: 980px;
+            margin: 28px auto 40px;
+            padding: 0 16px;
+        }
+
+        .topbar {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            margin-bottom: 12px;
+        }
+
+        .topbar a {
+            color: var(--accent);
+            text-decoration: none;
+            border: 1px solid var(--line);
+            background: #fff;
+            border-radius: 999px;
+            padding: 8px 14px;
+            font-weight: 600;
+            font-size: 0.92rem;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 18px;
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 20px;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 16px;
+            object-fit: cover;
+            border: 1px solid var(--line);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .headline {
+            margin: 7px 0 10px;
+            font-size: 1.07rem;
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 10px;
+            border-radius: 999px;
+            background: #ebfaf3;
+            color: #0e6e49;
+            font-size: 0.88rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .status::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--good);
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 12px;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .contact a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        section {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-top: 14px;
+            padding: 18px 20px;
+        }
+
+        h2 {
+            margin: 0 0 10px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+        }
+
+        p { margin: 0 0 10px; }
+
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .chip {
+            border: 1px solid #c9d7e8;
+            color: #1d3c61;
+            background: var(--accent-soft);
+            border-radius: 999px;
+            font-size: 0.86rem;
+            font-weight: 600;
+            padding: 6px 10px;
+        }
+
+        .story {
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 13px 14px;
+            margin-top: 10px;
+            background: #fff;
+        }
+
+        .story h3 {
+            margin: 0 0 5px;
+            font-size: 1.04rem;
+        }
+
+        .story .meta {
+            margin: 0 0 7px;
+            color: var(--muted);
+            font-size: 0.9rem;
+            font-family: "IBM Plex Mono", "Consolas", monospace;
+        }
+
+        .experience {
+            border-top: 1px solid var(--line);
+            padding-top: 12px;
+            margin-top: 12px;
+        }
+
+        .experience:first-of-type {
+            border-top: 0;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .experience h3 {
+            margin: 0 0 4px;
+            font-size: 1.02rem;
+        }
+
+        .experience .meta {
+            margin: 0 0 8px;
+            color: var(--muted);
+            font-size: 0.9rem;
+            font-family: "IBM Plex Mono", "Consolas", monospace;
+        }
+
+        .foot {
+            margin-top: 16px;
+            color: var(--muted);
+            text-align: center;
+            font-size: 0.87rem;
+        }
+
+        @media (max-width: 760px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .avatar {
+                width: 110px;
+                height: 110px;
+            }
+
+            h1 { font-size: 1.65rem; }
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <div class="topbar">
+            <a href="index.html">Portfolio Version</a>
+            <a href="resume.pdf">Download Resume PDF</a>
+        </div>
+
+        <header class="hero" id="top">
+            <img class="avatar" src="assets/img/profile.png" alt="Michael Spellecacy profile photo"/>
+            <div>
+                <h1>Michael Spellecacy</h1>
+                <p class="headline">AI-Focused Full-Stack Software Engineer | Rust, TypeScript, Next.js, AI Product Integration</p>
+                <div class="status">Open to work: AI Engineer, Senior Full-Stack Engineer, AI Platform Engineer</div>
+                <p>I build practical AI software that works in production. My focus is translating model capabilities into reliable user-facing features with clear constraints, measurable behavior, and maintainable implementation.</p>
+                <div class="contact">
+                    <span>Stamford, NY</span>
+                    <a href="mailto:mspellecacy@frakle.com">mspellecacy@frakle.com</a>
+                    <a href="https://www.linkedin.com/in/michaelspellecacy/">LinkedIn</a>
+                    <a href="https://github.com/mspellecacy">GitHub</a>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Over 20+ years, I have delivered software in healthcare, public-sector operations, and commercial products, moving from infrastructure-heavy work into modern full-stack and AI-integrated systems. My current work centers on AI product engineering: multi-provider LLM workflows, local inference and voice pipelines, and backend patterns that make these systems operationally trustworthy.</p>
+            <p>I am strongest where product direction is ambitious but execution details are still unclear. I shape those ideas into concrete architecture, implement the first production path quickly, and harden it through iterative improvements informed by real usage.</p>
+        </section>
+
+        <section>
+            <h2>Core Capabilities</h2>
+            <div class="chips">
+                <span class="chip">AI Product Engineering</span>
+                <span class="chip">LLM Integration</span>
+                <span class="chip">OpenAI / Anthropic / Gemini</span>
+                <span class="chip">Local Inference Workflows</span>
+                <span class="chip">Rust Services</span>
+                <span class="chip">TypeScript + Next.js</span>
+                <span class="chip">Supabase + PostgreSQL</span>
+                <span class="chip">Background Job Systems</span>
+                <span class="chip">API & Domain Design</span>
+                <span class="chip">Production Hardening</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Selected AI Impact</h2>
+
+            <article class="story">
+                <h3>Shadowtrack: Multi-provider AI features in a production-style web app</h3>
+                <p class="meta">Next.js 16 | TypeScript | Supabase | OpenAI | Anthropic | Gemini</p>
+                <p>I integrated multiple LLM providers into gameplay content workflows so users could generate adventures, items, and session content directly inside the product. I also built server-side usage enforcement and worker-backed processing so the system could scale responsibly with subscription tiers and predictable operational behavior.</p>
+            </article>
+
+            <article class="story">
+                <h3>Baing: AI recommendation and content workflow product</h3>
+                <p class="meta">Rust | Multi-provider AI integration | Product prototyping</p>
+                <p>I built Baing as an AI-focused product project to explore practical recommendation and content generation flows, not just model demos. The work centered on integrating provider-backed AI capabilities into usable product behavior, iterating quickly on UX and architecture, and validating what actually helps users in context.</p>
+            </article>
+
+            <article class="story">
+                <h3>Clankistrator: Rust orchestration framework for agentic implementation</h3>
+                <p class="meta">Rust 2024 | Rig | RAG | Provider routing</p>
+                <p>I built an orchestration framework that converts design documents into task graphs and routes execution to specialized agents. This made complex implementation work more structured, auditable, and iterative by adding review loops and context retrieval rather than relying on one-pass generation.</p>
+            </article>
+
+            <article class="story">
+                <h3>NPC voice tooling: Local-first AI voice pipelines</h3>
+                <p class="meta">Rust + Python | Axum | SQLx | LM Studio-compatible TTS</p>
+                <p>I designed APIs and editor workflows for speaker configuration, synthesis checks, and scene export. By implementing local-first endpoint support and explicit fallback behavior, I improved reliability for creators running AI voice generation without depending on cloud-only paths.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+
+            <div class="experience">
+                <h3>Full-Stack Software Engineer, LeftSquare</h3>
+                <p class="meta">Feb 2021 - Present | Stamford, NY</p>
+                <p>I have led and delivered product features where AI output had to be useful in a real user workflow, not just technically possible. My work combines Rust and TypeScript across frontend and backend boundaries, with emphasis on iteration speed, integration quality, and production stability under changing requirements.</p>
+            </div>
+
+            <div class="experience">
+                <h3>Senior Software Engineer, Casenet (now Zyter)</h3>
+                <p class="meta">Aug 2018 - Jan 2021 | Remote</p>
+                <p>I built integrated healthcare software in highly collaborative environments with strict practical constraints. I delivered Java API and TypeScript frontend work while helping multiple third-party systems operate as one coherent platform for clinical and operational teams.</p>
+            </div>
+
+            <div class="experience">
+                <h3>Analyst/Programmer IV, State of Alaska Department of Fish and Game</h3>
+                <p class="meta">Feb 2012 - Mar 2017 | Anchorage, AK</p>
+                <p>I owned mission-critical applications for in-season fisheries operations, where availability and correctness were non-negotiable. The systems I maintained supported both internal monitoring and public information delivery in high-pressure windows.</p>
+            </div>
+
+            <div class="experience">
+                <h3>Unix Configuration Specialist, Chenega Technology Services</h3>
+                <p class="meta">2005 - 2010 | Anchorage, AK</p>
+                <p>I maintained WebLogic infrastructure and automated deployment and operations tasks across mixed operating systems. This role shaped my core approach to reliability engineering and disciplined production support.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Selected Projects</h2>
+            <p><strong><a href="https://github.com/mspellecacy/shadowtrack-nextjs">shadowtrack-nextjs</a>:</strong> AI-assisted tabletop companion with usage-governed generation and worker processing.</p>
+            <p><strong><a href="https://github.com/mspellecacy/baing">baing</a>:</strong> Rust-based AI recommendation and content tooling project focused on practical model integration patterns.</p>
+            <p><strong><a href="https://github.com/mspellecacy/keebmidi">keebmidi</a>:</strong> Rust terminal utility for real-time MIDI-to-keyboard macro workflows.</p>
+            <p><strong><a href="https://github.com/mspellecacy/map-canvas">map-canvas</a>:</strong> Popular Foundry VTT map tooling module with active public usage.</p>
+        </section>
+
+        <p class="foot">This page is a recruiter-focused version. For a more expressive portfolio view, open <a href="index.html">index.html</a>.</p>
+    </main>
+</body>
+</html>
