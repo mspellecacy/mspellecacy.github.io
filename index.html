@@ -1,224 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content="Michael Spellecacy is an AI-focused full-stack software engineer building production products with Rust, TypeScript, Next.js, and multi-provider LLM integrations."/>
-    <meta name="author" content="Michael Spellecacy"/>
-    <meta name="robots" content="index,follow"/>
-    <link rel="canonical" href="https://mspellecacy.github.io/"/>
-
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Michael Spellecacy | AI-Focused Full-Stack Engineer"/>
-    <meta property="og:description" content="I build practical AI products: multi-provider LLM workflows, local voice pipelines, and production web platforms."/>
-    <meta property="og:url" content="https://mspellecacy.github.io/"/>
-    <meta property="og:image" content="https://mspellecacy.github.io/assets/img/profile.png"/>
-
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Michael Spellecacy | AI-Focused Full-Stack Engineer"/>
-    <meta name="twitter:description" content="Rust + TypeScript engineer shipping real AI features, from orchestration to local inference workflows."/>
-    <meta name="twitter:image" content="https://mspellecacy.github.io/assets/img/profile.png"/>
-
-    <title>Michael Spellecacy | AI-Focused Full-Stack Software Engineer</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-
-    <link href="css/dark-juice.css" rel="stylesheet"/>
-    <link href="css/dope.css" rel="stylesheet"/>
-    <link href="css/osr-ink.css" rel="stylesheet"/>
-    <link href="css/cartoon-classic.css" rel="stylesheet"/>
-    <link href="css/retro-terminal-green.css" rel="stylesheet"/>
-
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Michael Spellecacy",
-            "jobTitle": "AI-Focused Full-Stack Software Engineer",
-            "url": "https://mspellecacy.github.io/",
-            "image": "https://mspellecacy.github.io/assets/img/profile.png",
-            "sameAs": [
-                "https://www.linkedin.com/in/michaelspellecacy/",
-                "https://github.com/mspellecacy",
-                "https://gitlab.com/mspellecacy",
-                "https://www.youtube.com/@f1kle"
-            ],
-            "knowsAbout": [
-                "AI Product Engineering",
-                "LLM Integrations",
-                "OpenAI API",
-                "Anthropic Claude",
-                "Google Gemini",
-                "Rust",
-                "TypeScript",
-                "Next.js",
-                "PostgreSQL",
-                "Supabase",
-                "Local Inference",
-                "Text-to-Speech"
-            ]
-        }
-    </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Michael Spellecacy — software engineer, tinkerer, and occasional party support. Practical AI, tabletop tools, Rust, TypeScript, and 20+ years of building things.">
+  <meta name="author" content="Michael Spellecacy">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#f4eddd">
+  <link rel="canonical" href="https://mspellecacy.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Michael Spellecacy | Engineer & Tinkerer">
+  <meta property="og:description" content="Software for the real world. Tools for imaginary ones. Explore the work, the experience, and a few side quests.">
+  <meta property="og:url" content="https://mspellecacy.github.io/">
+  <meta property="og:image" content="https://mspellecacy.github.io/assets/img/profile.png">
+  <meta property="og:image:alt" content="Michael Spellecacy">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Michael Spellecacy | Engineer & Tinkerer">
+  <meta name="twitter:description" content="Software for the real world. Tools for imaginary ones. Rust, TypeScript, practical AI, and 20+ years of building things.">
+  <meta name="twitter:image" content="https://mspellecacy.github.io/assets/img/profile.png">
+  <title>Michael Spellecacy | Software Engineer & Tinkerer</title>
+  <link rel="icon" href="assets/img/d20.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/img/favicon.ico">
+  <link rel="stylesheet" href="css/sidequest.css">
+  <script src="js/sidequest.js" defer></script>
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Spellecacy",
+    "jobTitle": "Full-Stack Software Engineer",
+    "url": "https://mspellecacy.github.io/",
+    "image": "https://mspellecacy.github.io/assets/img/profile.png",
+    "sameAs": [
+        "https://www.linkedin.com/in/michaelspellecacy/",
+        "https://github.com/mspellecacy",
+        "https://gitlab.com/mspellecacy",
+        "https://www.youtube.com/@f1kle"
+    ],
+    "knowsAbout": [
+        "AI Product Engineering",
+        "LLM Integrations",
+        "OpenAI API",
+        "Anthropic Claude",
+        "Google Gemini",
+        "Rust",
+        "TypeScript",
+        "Next.js",
+        "PostgreSQL",
+        "Supabase",
+        "Local Inference",
+        "Text-to-Speech"
+    ]
+}
+  </script>
 </head>
-<body data-theme="retro-terminal-green">
-    <nav class="nav-links">
-        <a href="#about">// About</a>
-        <a href="#ai-highlights">// AI Highlights</a>
-        <a href="#experience">// Experience</a>
-        <a href="#projects">// Projects</a>
-        <a href="#skills">// Skills</a>
-        <a href="#contact">// Contact</a>
-        <div class="theme-switcher">
-            <select id="theme-select" aria-label="Select visual theme">
-                <option value="retro-terminal-green" selected>Theme: Retro Terminal Green</option>
-                <option value="cartoon-classic">Theme: Classic Cartoon</option>
-                <option value="dark-juice">Theme: Dark Neon (Juice)</option>
-                <option value="dope">Theme: Cyberpunk (Dope)</option>
-                <option value="osr-ink">Theme: OSR Heavy Ink</option>
-            </select>
-        </div>
-    </nav>
-
-    <div class="container">
-        <header id="about">
-            <div class="profile-img-container">
-                <img src="assets/img/profile.png" alt="Michael Spellecacy"/>
-            </div>
-            <h1>Michael Spellecacy</h1>
-            <div class="subtitle">&gt; AI-FOCUSED FULL-STACK SOFTWARE ENGINEER _</div>
-
-            <div class="card">
-                <p>I build practical AI software end-to-end: product UX, backend services, and model integrations. My recent work spans multi-provider LLM workflows, local/offline inference and TTS pipelines, and production-grade web apps in Rust and TypeScript.</p>
-                <p>Across 20+ years in healthcare, government, and commercial environments, I have consistently taken ambiguous requirements and turned them into stable, shippable systems. Today that same pattern shows up in my AI work: I focus on features that are useful in production, measurable in operation, and maintainable by teams after launch.</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/michaelspellecacy/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/mspellecacy" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://gitlab.com/mspellecacy" aria-label="GitLab"><i class="fab fa-gitlab"></i></a>
-                    <a href="mailto:mspellecacy@frakle.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="resume.pdf" aria-label="Resume PDF"><i class="fas fa-file-pdf"></i></a>
-                </div>
-            </div>
-        </header>
-
-        <section id="ai-highlights">
-            <h2>&lt;AI Highlights /&gt;</h2>
-
-            <div class="card job">
-                <h3>Shadowtrack (Next.js + Supabase + AI Providers)</h3>
-                <div class="date">Production-style AI feature platform</div>
-                <p>I integrated OpenAI, Gemini, and Anthropic generation into a live gameplay workflow so users could create adventures, items, and campaign content in context rather than in a disconnected prompt tool. To keep the system dependable as usage grows, I implemented server-side usage enforcement, tier limits, and worker-based processing with tracking hooks that made AI costs and behavior visible.</p>
-            </div>
-
-            <div class="card job">
-                <h3>Baing (Rust AI Product Prototype)</h3>
-                <div class="date">AI recommendation + content workflow exploration</div>
-                <p>I built Baing to explore practical AI recommendation and content-generation flows as product behavior, not one-off demos. The project focused on integrating provider-backed AI capabilities into a usable experience, then iterating quickly on architecture and UX based on what actually helped users in context.</p>
-            </div>
-
-            <div class="card job">
-                <h3>Clankistrator (Rust Multi-Agent Orchestration)</h3>
-                <div class="date">Provider-agnostic orchestration framework</div>
-                <p>I built a Rust orchestration framework that turns design documents into executable task graphs and routes work to specialized agents. The framework supports provider switching across OpenAI, Anthropic, Gemini, and local model paths, and it includes review loops plus RAG-supported context so generated work can be verified and iterated instead of treated as one-shot output.</p>
-            </div>
-
-            <div class="card job">
-                <h3>NPC Voice Tooling (Rust + Python + Local TTS)</h3>
-                <div class="date">Local-first AI voice pipeline work</div>
-                <p>I developed speaker-profile APIs and workflow tooling that let creators test synthesis, manage voice settings, and export scene audio as a repeatable pipeline. By integrating LM Studio-compatible endpoints and explicit fallback behavior, I made local/offline TTS workflows more reliable for real usage instead of demo-only scenarios.</p>
-            </div>
-        </section>
-
-        <section id="experience">
-            <h2>&lt;Experience /&gt;</h2>
-
-            <div class="card job">
-                <h3>Full-Stack Software Engineer @ LeftSquare</h3>
-                <div class="date">[ Feb 2021 - Current ] | Stamford, NY</div>
-                <p>At LeftSquare, I have led projects where AI is treated as product capability rather than novelty. I shipped Rust and TypeScript features that connect model output to user workflows, built internal tooling that reduced iteration time on prompts and generation pipelines, and delivered production modules that had to survive real integration complexity and changing requirements.</p>
-            </div>
-
-            <div class="card job">
-                <h3>Senior Software Engineer @ Casenet, LLC (now Zyter)</h3>
-                <div class="date">[ Aug 2018 - Jan 2021 ] | Remote Contract</div>
-                <p>I partnered directly with product and operations stakeholders to deliver integrated healthcare software under fast-moving constraints. My work spanned Java API development and Angular/React TypeScript interfaces, with a focus on integrating multiple external vendor systems into one coherent clinical workflow for end users.</p>
-            </div>
-
-            <div class="card job">
-                <h3>Analyst/Programmer IV @ State of Alaska - Dept. of Fish and Game</h3>
-                <div class="date">[ Feb 2012 - Mar 2017 ] | Anchorage, AK</div>
-                <p>I owned in-season software used to monitor and communicate status for one of the largest wild salmon fisheries in the world. The systems had to be accurate, available, and understandable under time pressure, so I focused on operational reliability and clear information flow for both internal teams and public communications.</p>
-            </div>
-
-            <div class="card job">
-                <h3>Unix Configuration Specialist @ Chenega Technology Services</h3>
-                <div class="date">[ 2005 - 2010 ] | Anchorage, AK</div>
-                <p>I maintained WebLogic infrastructure across mixed operating systems and built automation to reduce brittle manual operational tasks. That work established my foundation in systems reliability, deployment discipline, and production troubleshooting that still informs how I build and ship software today.</p>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>&lt;Selected Projects /&gt;</h2>
-
-            <div class="card job">
-                <h3><a href="https://github.com/mspellecacy/shadowtrack-nextjs">shadowtrack-nextjs</a></h3>
-                <p>Next.js + Supabase app with AI-generated adventures, items, and session tooling, including usage tracking and provider routing.</p>
-            </div>
-
-            <div class="card job">
-                <h3><a href="https://github.com/mspellecacy/baing">baing</a></h3>
-                <p>Rust-based AI recommendation and content tooling project focused on practical model integration patterns.</p>
-            </div>
-
-            <div class="card job">
-                <h3><a href="https://github.com/mspellecacy/keebmidi">keebmidi</a></h3>
-                <p>Rust terminal utility mapping MIDI input devices to keyboard events and macros for real-time interaction workflows.</p>
-            </div>
-
-            <div class="card job">
-                <h3><a href="https://github.com/mspellecacy/map-canvas">map-canvas</a></h3>
-                <p>Foundry VTT module for generating maps from Google Maps, with active OSS community usage.</p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>&lt;Skills /&gt;</h2>
-            <div class="card">
-                <h3>AI + Platform</h3>
-                <p>LLM integrations, prompt and action orchestration, local inference workflows, model/provider routing, usage governance, async job execution, and API-first backend design.</p>
-                <h3>Languages + Frameworks</h3>
-                <p>Rust, TypeScript, Java, Python, Next.js, React, Axum, Actix, SQLx, Supabase, PostgreSQL.</p>
-                <h3>Delivery</h3>
-                <p>Architecture, rapid prototyping, production hardening, observability-minded iteration, and collaborative product development.</p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>&lt;Contact /&gt;</h2>
-            <div class="card">
-                <p>Open to AI Engineer, Senior Full-Stack Engineer, and AI Platform Engineer roles (remote or hybrid).</p>
-                <p>Email: <a href="mailto:mspellecacy@frakle.com">mspellecacy@frakle.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/michaelspellecacy/">linkedin.com/in/michaelspellecacy</a></p>
-                <p>GitHub: <a href="https://github.com/mspellecacy">github.com/mspellecacy</a></p>
-            </div>
-        </section>
-    </div>
-
-    <script>
-        (function () {
-            const select = document.getElementById('theme-select');
-            if (!select) {
-                return;
-            }
-
-            const applyTheme = (themeName) => {
-                document.body.setAttribute('data-theme', themeName);
-                select.value = themeName;
-            };
-
-            applyTheme(document.body.getAttribute('data-theme') || 'retro-terminal-green');
-            select.addEventListener('change', (event) => applyTheme(event.target.value));
-        })();
-    </script>
+<body class="sidequest">
+<a class="skip" href="#main">Skip to content</a>
+<div class="page">
+<nav class="topnav" aria-label="Main navigation">
+<a class="wordmark" href="#main">✦ The Spellecacy compendium</a>
+<div class="nav-items">
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="resume.pdf">CV ↗</a>
+<a class="nav-contact" href="#contact">Say hello ↗</a>
+</div>
+</nav>
+<main id="main" tabindex="-1">
+<div class="quest-kicker">
+<span>Adventurer’s record / A CV of sorts</span>
+<span>Full-stack engineer · Rust · TypeScript · AI</span>
+</div>
+<header class="quest-hero" id="about">
+<div>
+<h1>Michael<br> Spellecacy.</h1>
+<p class="character-class">Engineer. Tinkerer. Occasional party support.</p>
+<p class="intro">I make software for the real world and tools for imaginary ones. Twenty-plus years across healthcare, government, and commercial work — with plenty of tabletop adventures along the way.</p>
+<div class="print-contact">
+  <a href="mailto:mspellecacy@frakle.com">mspellecacy@frakle.com</a> ·
+  <a href="https://github.com/mspellecacy">github.com/mspellecacy</a> ·
+  <a href="https://www.linkedin.com/in/michaelspellecacy/">linkedin.com/in/michaelspellecacy</a>
+</div>
+<div class="actions">
+<a class="button" href="#projects">Explore the projects <span aria-hidden="true">↓</span>
+</a>
+<a href="resume.pdf">Download CV ↗</a>
+</div>
+</div>
+<figure class="quest-art"><img src="assets/img/wizard-snail.svg" width="370" height="280" alt="A snail adventurer carrying a little computer in a wizard hat.">
+<figcaption>A well-equipped wanderer. Sensible travel speed.</figcaption>
+</figure>
+</header>
+<div class="character-stats" aria-label="Engineering profile">
+<div><strong>20+ years</strong>
+<span>Experience</span>
+</div>
+<div><strong>Rust / TS</strong>
+<span>Favorite equipment</span>
+</div>
+<div><strong>AI & apps</strong>
+<span>Current focus</span>
+</div>
+<div><strong>Remote / hybrid</strong>
+<span>Next adventure</span>
+</div>
+</div>
+<div class="loot-box" id="project-roll" hidden>
+<div class="die" aria-hidden="true">
+<svg class="" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+<path d="m32 5 24 16-4 28-20 11L9 46 7 20Z" stroke="currentColor" stroke-width="2"/>
+<path d="m32 5-13 25 13 22 12-24Zm-25 15 12 10-10 16m47-25-12 7 8 21M19 30l25-2M32 60V52" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+<span id="die-value">?</span>
+</div>
+<button class="roll-button" type="button" data-roll aria-describedby="roll-help">Roll for a project</button>
+<div class="loot-text">
+<p id="roll-help">Six projects. One d20. Let the dice choose.</p>
+<p id="roll-result" role="status" aria-live="polite" aria-atomic="true">
+</p>
+<a id="loot-link" href="#projects" hidden>Inspect the project ↓</a>
+</div>
+</div>
+<span id="ai-highlights" class="legacy-anchor" aria-hidden="true">
+</span>
+<section class="section" id="projects" aria-labelledby="projects-heading">
+<div class="section-title">
+<h2 id="projects-heading">Collected curiosities</h2>
+<span class="micro">Projects / Inspect the inventory</span>
+</div>
+<div class="project-grid">
+<article class="project-card" id="project-shadowtrack">
+<div class="project-icon">
+<svg class="" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+<path d="m32 5 24 16-4 28-20 11L9 46 7 20Z" stroke="currentColor" stroke-width="2"/>
+<path d="m32 5-13 25 13 22 12-24Zm-25 15 12 10-10 16m47-25-12 7 8 21M19 30l25-2M32 60V52" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</div>
+<span class="project-kind">For the game table</span>
+<h3>
+<a href="https://github.com/mspellecacy/shadowtrack-nextjs">Shadowtrack ↗</a>
+</h3>
+<p>AI-generated adventures, items, and campaign content inside the gameplay workflow. Multiple providers, usage controls, and workers keep the machinery behind the curtain.</p>
+<div class="project-tools">Next.js · Supabase · OpenAI / Gemini / Anthropic</div>
+</article>
+<article class="project-card" id="project-keebmidi">
+<div class="project-icon">
+<svg class="" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+<path d="M8 19h48v31H8Z" stroke="currentColor" stroke-width="2"/>
+<path d="M8 32h48M19 32v18m11-18v18m11-18v18m8-18v18" stroke="currentColor" stroke-width="1.5"/>
+<path d="M16 32v11h6V32m15 0v11h6V32" fill="currentColor"/>
+<circle cx="16" cy="25" r="2" fill="currentColor"/>
+<circle cx="25" cy="25" r="2" fill="currentColor"/>
+</svg>
+</div>
+<span class="project-kind">For the wonderfully specific problem</span>
+<h3>
+<a href="https://github.com/mspellecacy/keebmidi">keebmidi ↗</a>
+</h3>
+<p>A Rust terminal utility that turns MIDI input into keyboard events and macros. A different way to put a controller to work.</p>
+<div class="project-tools">Rust · MIDI · Terminal UI</div>
+</article>
+<article class="project-card" id="project-map-canvas">
+<div class="project-icon">
+<svg class="" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+<path d="m6 15 17-6 18 7 17-7v41l-17 7-18-7-17 6Z" stroke="currentColor" stroke-width="2"/>
+<path d="M23 9v41m18-34v41" stroke="currentColor"/>
+<path d="m13 27 5 10 12-12 10 14 9-12" stroke="currentColor" stroke-width="2" stroke-dasharray="3 3"/>
+<circle cx="49" cy="27" r="3" fill="currentColor"/>
+</svg>
+</div>
+<span class="project-kind">For imaginary places</span>
+<h3>
+<a href="https://github.com/mspellecacy/map-canvas">map-canvas ↗</a>
+</h3>
+<p>A Foundry VTT module that brings Google Maps into the map-making workflow. Real geography, ready for tabletop adventures.</p>
+<div class="project-tools">Foundry VTT · Maps · Open source</div>
+</article>
+<article class="project-card" id="project-clankistrator">
+<div class="project-icon">
+<svg class="" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+<rect x="19" y="7" width="26" height="20" rx="3" stroke="currentColor" stroke-width="2"/>
+<circle cx="26" cy="16" r="2" fill="currentColor"/>
+<circle cx="38" cy="16" r="2" fill="currentColor"/>
+<path d="M27 22h10m-5 5v10M13 38h38M13 38v6m38-6v6" stroke="currentColor" stroke-width="2"/>
+<rect x="4" y="44" width="18" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+<rect x="42" y="44" width="18" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+</svg>
+</div>
+<span class="project-kind">For getting the party organized</span>
+<h3>Clankistrator</h3>
+<p>A Rust multi-agent framework that turns design documents into task graphs, with provider switching, RAG context, and review loops.</p>
+<div class="project-tools">Rust · Agents · Orchestration</div>
+</article>
+<article class="project-card" id="project-npc-voice">
+<div class="project-icon">
+<svg class="" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+<path d="M11 27v11m8-18v26m8-35v42m9-36v31m9-26v21m8-14v7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+</svg>
+</div>
+<span class="project-kind">For characters with something to say</span>
+<h3>NPC voice tooling</h3>
+<p>Local and offline voice workflows: speaker profiles, synthesis tests, scene audio exports, and explicit fallback behavior.</p>
+<div class="project-tools">Rust · Python · Local TTS</div>
+</article>
+<article class="project-card" id="project-baing">
+<div class="project-icon">
+<svg class="" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+<path d="M24 41c-2-8-9-11-9-19a17 17 0 0 1 34 0c0 8-7 12-9 19Z" stroke="currentColor" stroke-width="2"/>
+<path d="M23 47h18m-16 6h14m-11 5h8M32 41V27m-7-5 7 6 7-6M6 19l5 1m42 0 5-1M12 4l4 5m32 0 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+</div>
+<span class="project-kind">For trying an idea on for size</span>
+<h3>
+<a href="https://github.com/mspellecacy/baing">Baing ↗</a>
+</h3>
+<p>A Rust prototype exploring AI recommendations and content generation as part of an actual product workflow.</p>
+<div class="project-tools">Rust · Recommendations · AI</div>
+</article>
+</div>
+</section>
+<section class="section" id="experience" aria-labelledby="experience-heading">
+<div class="section-title">
+<h2 id="experience-heading">The campaign so far</h2>
+<span class="micro">Experience / Main quest</span>
+</div>
+<article class="career-item">
+<p class="career-date">Feb 2021 — Present</p>
+<div>
+<h3>LeftSquare</h3>
+<p class="career-role">Full-Stack Software Engineer</p>
+</div>
+<p>Building Rust and TypeScript products end-to-end, from user workflows to backend services and AI integrations. Internal tools make prompts and generation pipelines easier to test and iterate.</p>
+</article>
+<article class="career-item">
+<p class="career-date">Aug 2018 — Jan 2021</p>
+<div>
+<h3>Casenet, LLC <span class="company-note">(now Zyter)</span>
+</h3>
+<p class="career-role">Senior Software Engineer · Remote contract</p>
+</div>
+<p>Java APIs and Angular / React interfaces for healthcare software. Worked with product and operations teams to connect multiple vendor systems into coherent clinical workflows.</p>
+</article>
+<article class="career-item">
+<p class="career-date">Feb 2012 — Mar 2017</p>
+<div>
+<h3>Alaska Department of Fish & Game</h3>
+<p class="career-role">Analyst / Programmer IV</p>
+</div>
+<p>Owned in-season software for a major wild salmon fishery, supporting accurate reporting and clear information for internal teams and public communications under time pressure.</p>
+</article>
+<article class="career-item">
+<p class="career-date">2005 — 2010</p>
+<div>
+<h3>Chenega Technology Services</h3>
+<p class="career-role">Unix Configuration Specialist</p>
+</div>
+<p>Maintained WebLogic infrastructure across mixed operating systems, automated brittle manual tasks, and worked through production deployment and reliability problems.</p>
+</article>
+<div class="earlier-chapters">
+<p class="micro">Earlier chapters</p>
+<p><strong>Wostmann & Associates, Inc.</strong> · Associate Consultant II · May 2010–2011. Migration of a production application from WebSphere 5.1 to WebSphere 7.</p>
+<p><strong>2000–2005:</strong> Programmer / analyst roles at MIKA Systems Inc., SageGroup LLC, and Integrity Solutions Inc.</p>
+</div>
+</section>
+<section class="section" id="skills" aria-labelledby="skills-heading">
+<div class="section-title">
+<h2 id="skills-heading">Equipment & proficiencies</h2>
+<span class="micro">Skills / Equipment list</span>
+</div>
+<div class="toolbox">
+<div>
+<h3>Languages & frameworks</h3>
+<p>Rust, TypeScript, Java, Python, Next.js, React, Angular, Axum, Actix, and SQLx.</p>
+</div>
+<div>
+<h3>Models & machinery</h3>
+<p>Multi-provider LLMs, local inference, voice pipelines, agent orchestration, and async workers.</p>
+</div>
+<div>
+<h3>The bits underneath</h3>
+<p>PostgreSQL, Supabase, APIs, usage controls, architecture, observability, and production troubleshooting.</p>
+</div>
+</div>
+</section>
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+<div>
+<p class="micro">The next thing starts with a conversation.</p>
+<h2 id="contact-heading">Got something in mind?</h2>
+<p>Open to AI, senior full-stack, and platform roles. Remote or hybrid.</p>
+<a class="contact-email" href="mailto:mspellecacy@frakle.com">mspellecacy@frakle.com</a>
+<div class="socials">
+<a href="mailto:mspellecacy@frakle.com">Email ↗</a>
+<a href="https://github.com/mspellecacy">GitHub ↗</a>
+<a href="https://www.linkedin.com/in/michaelspellecacy/">LinkedIn ↗</a>
+<a href="https://gitlab.com/mspellecacy">GitLab ↗</a>
+</div>
+</div>
+<a class="button" href="mailto:mspellecacy@frakle.com">Say hello <span aria-hidden="true">↗</span>
+</a>
+</section>
+</main>
+<footer class="footer">
+<span>Michael Spellecacy · A small corner of the internet.</span>
+<span class="footer-note">No quest marker required.</span>
+<a href="#main">Back upstairs ↑</a>
+</footer>
+</div>
 </body>
 </html>
