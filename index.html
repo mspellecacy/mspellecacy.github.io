@@ -28,7 +28,12 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Michael Spellecacy",
-    "jobTitle": "Full-Stack Software Engineer",
+    "jobTitle": "Co-Founder & Lead Engineer",
+    "worksFor": {
+        "@type": "Organization",
+        "name": "MarketMonster.co",
+        "url": "https://marketmonster.co"
+    },
     "url": "https://mspellecacy.github.io/",
     "image": "https://mspellecacy.github.io/assets/img/profile.png",
     "sameAs": [
@@ -49,7 +54,9 @@
         "PostgreSQL",
         "Supabase",
         "Local Inference",
-        "Text-to-Speech"
+        "Text-to-Speech",
+        "Model Context Protocol (MCP)",
+        "Amazon Selling Partner API"
     ]
 }
   </script>
@@ -101,7 +108,7 @@
 <div><strong>AI & apps</strong>
 <span>Current focus</span>
 </div>
-<div><strong>Remote / hybrid</strong>
+<div><strong>Remote (US)</strong>
 <span>Next adventure</span>
 </div>
 </div>
@@ -129,6 +136,20 @@
 <span class="micro">Projects / Inspect the inventory</span>
 </div>
 <div class="project-grid">
+<article class="project-card" id="project-marketmonster">
+<div class="project-icon">
+<svg class="" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+<path d="M10 21 32 10l22 11v24L32 56 10 45Z" stroke="currentColor" stroke-width="2"/>
+<path d="m10 21 22 11 22-11M32 32v24M21 15.5l22 11" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</div>
+<span class="project-kind">For the people who ship things</span>
+<h3>
+<a href="https://marketmonster.co">Market Monster ↗</a>
+</h3>
+<p>FBA shipment prep, inventory, and profit tracking for Amazon sellers. Co-founded and in private beta, with an MCP server for AI agents and a little Rust app that prints the labels.</p>
+<div class="project-tools">Next.js · TypeScript · Postgres · MCP · Rust</div>
+</article>
 <article class="project-card" id="project-shadowtrack">
 <div class="project-icon">
 <svg class="" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -138,7 +159,7 @@
 </div>
 <span class="project-kind">For the game table</span>
 <h3>
-<a href="https://github.com/mspellecacy/shadowtrack-nextjs">Shadowtrack ↗</a>
+Shadowtrack
 </h3>
 <p>AI-generated adventures, items, and campaign content inside the gameplay workflow. Multiple providers, usage controls, and workers keep the machinery behind the curtain.</p>
 <div class="project-tools">Next.js · Supabase · OpenAI / Gemini / Anthropic</div>
@@ -188,20 +209,11 @@
 </svg>
 </div>
 <span class="project-kind">For getting the party organized</span>
-<h3>Clankistrator</h3>
-<p>A Rust multi-agent framework that turns design documents into task graphs, with provider switching, RAG context, and review loops.</p>
-<div class="project-tools">Rust · Agents · Orchestration</div>
-</article>
-<article class="project-card" id="project-npc-voice">
-<div class="project-icon">
-<svg class="" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-<path d="M11 27v11m8-18v26m8-35v42m9-36v31m9-26v21m8-14v7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-</svg>
-</div>
-<span class="project-kind">For characters with something to say</span>
-<h3>NPC voice tooling</h3>
-<p>Local and offline voice workflows: speaker profiles, synthesis tests, scene audio exports, and explicit fallback behavior.</p>
-<div class="project-tools">Rust · Python · Local TTS</div>
+<h3>
+<a href="https://github.com/mspellecacy/clankistrator">Clankistrator ↗</a>
+</h3>
+<p>A Rust MCP server that lets Claude Code hand a task to an agent on any of several LLM providers, with every command the agent runs jailed in a sandbox.</p>
+<div class="project-tools">Rust · MCP · Agents</div>
 </article>
 <article class="project-card" id="project-baing">
 <div class="project-icon">
@@ -225,12 +237,20 @@
 <span class="micro">Experience / Main quest</span>
 </div>
 <article class="career-item">
-<p class="career-date">Feb 2021 — Present</p>
+<p class="career-date">Apr 2026 — Present</p>
+<div>
+<h3>MarketMonster.co</h3>
+<p class="career-role">Co-Founder &amp; Lead Engineer</p>
+</div>
+<p>Co-founded a two-person company building inbound-shipment, inventory, and profitability tools for Amazon sellers, now in private beta. Leading engineering on the Amazon Selling Partner API integration, background workers, an MCP server and REST API built for AI agents, and a small Rust app for silent label printing.</p>
+</article>
+<article class="career-item">
+<p class="career-date">Feb 2021 — Apr 2026</p>
 <div>
 <h3>LeftSquare</h3>
 <p class="career-role">Full-Stack Software Engineer</p>
 </div>
-<p>Building Rust and TypeScript products end-to-end, from user workflows to backend services and AI integrations. Internal tools make prompts and generation pipelines easier to test and iterate.</p>
+<p>Built Rust and TypeScript products end-to-end, from user workflows to backend services and AI integrations. Internal tools made prompts and generation pipelines easier to test and iterate.</p>
 </article>
 <article class="career-item">
 <p class="career-date">Aug 2018 — Jan 2021</p>
@@ -240,6 +260,13 @@
 <p class="career-role">Senior Software Engineer · Remote contract</p>
 </div>
 <p>Java APIs and Angular / React interfaces for healthcare software. Worked with product and operations teams to connect multiple vendor systems into coherent clinical workflows.</p>
+</article>
+<article class="career-item">
+<p class="career-date">Mar 2017 — Aug 2018</p>
+<div>
+<h3>Career break</h3>
+<p class="career-role">Planned sabbatical</p>
+</div>
 </article>
 <article class="career-item">
 <p class="career-date">Feb 2012 — Mar 2017</p>
@@ -287,7 +314,7 @@
 <div>
 <p class="micro">The next thing starts with a conversation.</p>
 <h2 id="contact-heading">Got something in mind?</h2>
-<p>Open to AI, senior full-stack, and platform roles. Remote or hybrid.</p>
+<p>Open to AI, senior full-stack, and platform roles. Fully remote (US).</p>
 <a class="contact-email" href="mailto:mspellecacy@frakle.com">mspellecacy@frakle.com</a>
 <div class="socials">
 <a href="mailto:mspellecacy@frakle.com">Email ↗</a>
